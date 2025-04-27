@@ -1,17 +1,10 @@
 import Image from "next/image";
+import LoginBtn from "./LoginBtn";
 
 export default function Home() {
   return (
     <main className="flex justify-center items-center h-screen">
-      <button className="flex gap-2 items-center border border-neutral-900 p-2 rounded-md cursor-pointer">
-        <Image
-          src="/g-icon.png"
-          alt="Google Logo"
-          width={24}
-          height={24}
-        />
-        Login com Google
-      </button>
+      <LoginBtn />
     </main>
   );
 }
